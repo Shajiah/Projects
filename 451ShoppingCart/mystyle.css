@@ -1,0 +1,156 @@
+body
+{
+	/*#023C5B*/
+	background-color: #f2e6d9;
+}
+
+tfoot
+{
+	color: red;
+}	
+table
+{
+	background-color: #e5cdb3;
+    margin-top: 20px;
+    width: 100%;
+    border: 3px solid #333;  
+}
+table.clearfix:before, table.clearfix:after 
+{ 
+	content: ""; 
+	display: table; 
+}
+
+.row::before 
+{
+	display: table;
+	content: "sgrg";
+}
+
+#theTable 
+{
+	float: left;
+	width: 700px;
+    margin-bottom: 20px;
+    margin-bottom: 40px;
+	margin-left: 30px;
+    margin-right: 50px;
+/*  margin-right: auto;
+    margin-left: auto;*/
+    float: right;
+    padding: 10px 20px 20px 20px;
+    font-family: 'Calibri';
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+}
+td
+{
+	border: 1px solid #e5cdb3;
+}
+/*table, th, td {
+    border: 1px solid black;
+}*/
+
+#headRow 
+{
+	background-color: #023C5B;
+}
+td, #header
+{
+	text-align: center;
+}
+
+
+.valid
+{
+	display: none;
+}
+
+.error
+{
+	color: red;
+}
+
+#title, img
+{
+	/*text-align: center;*/
+	 /*white-space:nowrap;*/
+	display: inline;
+	
+}
+
+#removeBTN
+{
+	float: right;
+	margin-right: 25px;
+	margin-top: 10px;
+}
+
+#addNewItem
+{
+	float:left;
+	height: 400px;
+	width: 370px;
+	margin-left: 25px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px;
+	background-color: #e5cdb3;
+}
+
+th
+{
+	color: white;
+}
+
+ul 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #023C5B;
+    /*text-align: center;*/
+
+}
+
+li 
+{
+    float: left;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li:hover
+{
+	background-color: #111;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

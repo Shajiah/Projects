@@ -1,0 +1,96 @@
+<html>
+	<head>
+	 	<title> Shopping Cart</title>
+	 	<link rel="stylesheet" type="text/css" href="mystyle.css">
+
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	</head>
+
+	<body>
+		<img src="four51_logo.png">
+		<ul>
+			<li>Product</li>
+			<li>Partners</li>
+			<li>Resources</li>
+			<li>Solutions</li>
+			<li>Company</li>
+			
+
+		</ul>
+
+
+		<div id = "header">
+		  <h1 id = "title"> Shopping Cart</h1>
+		  <img src="shopping_bag.png" alt="Mountain View" style="width:140px;height:160px;">
+		</div>
+	  <hr />
+
+	  <div id = "addNewItem">
+		  <h3 style="text-align: center;">Add New Item</h3>
+
+		  <label>Name: </label>
+		  <input id="name" class="form-control" placeholder="Enter Name of Item" type="text" data-bind="value: newItemName, valueUpdate: 'keyup'" />
+		  <br />
+
+		  <label>Unit Price: </label>
+		  <input id="price" class="form-control" type="number" min="1" step="0.25" data-bind="value: newItemPrice, valueUpdate: 'keyup'" />
+		  <h5 id = "priceError" class="valid">Enter a valid price. The price must be greater than 0</h5>
+		  <br />
+
+		  <label>Quantity: </label>
+		  <input id="quantity" class="form-control" type="number" min="1" step="1" data-bind="value: newItemQuantity, valueUpdate: 'keyup'" />
+		  <h5 id="quantityError" class="valid"> Please enter a quantity greater than or equal to 1</h5>
+		  <br />
+		  <!-- ADD ITEM BUTTON -->
+	 	 <button class="btn btn-default" data-bind="click: addNewItem, enable: addNewItemEnabled">Add Item</button>
+	  </div>
+	  
+	  
+	  <hr />
+	  
+	 <div id = "theTable">
+	 	<h3>Your Shopping Cart</h3>
+	  <table class="table table-bordered" id = "cart">
+	  	
+		
+		<tr id="headRow">
+			<th>Name</th>
+			<th>Price</th>
+			<th>Unit</th>
+			<th>Total</th>
+		</tr>
+
+		<!-- Sort list of items alphabetically -->
+		<tbody data-bind="foreach: itemsInCart().sort(function (left, right){return left.name == right.name ? 0 : (left.name < right.name ? -1 : 1)})">
+			<tr class="row">
+				<td data-bind="text: name"></td>
+				<td>$<span data-bind="text: price"></span></td>
+				<td data-bind = "text: quantity"> </td>
+				<td>$<span data-bind="text: total"></span></td>
+				<!-- <td><a href="#" data-bind="click: removeNewItem">Remove</a></td> -->
+				<!-- <td><button id = "removeBTN" data-bind="click:removeNewItem">Remove</button></td> -->
+			</tr>
+		</tbody>
+	  </table>
+
+		  <button id = "removeBTN" class="btn btn-default" data-bind="click:removeNewItem">Remove</button>
+		  <!-- Trying to get the Total -->
+		  <!-- <h3 data-bind = "text: subtotal"> Total: </h3> -->
+		  <h3 data-bind="foreach: itemsInCart()"></h3>
+		  <h3 >Total is :  
+		  	<!-- <span data-bind = "text: total"> </span> -->
+		  	<span data-bind = "text: grandTotal()"> </span> 
+		  </h3>
+	
+	  </div>
+
+	  
+	  <script src="jquery-1.11.2.min.js"></script>
+	  <script src="knockout-3.2.0.js"></script>
+	  <script src="script.js"></script>
+	</body>
+</html>
