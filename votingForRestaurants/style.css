@@ -1,0 +1,19 @@
+/*body 
+{
+	background-image: url("plate1.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+*/
+#votingtitle, p, #radiobutton
+{
+	color: #F5F5DC;
+	/*color: #FFE4C4;*/
+	/*color: #FFEBCD;*/
+}
+
+/*#submitbutton
+{
+	text-align: center;
+}
+*/
