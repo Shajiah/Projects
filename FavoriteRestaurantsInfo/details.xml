@@ -1,0 +1,28 @@
+<users>
+
+	<!-- first user -->
+	<user>
+		<idnum> 1 </idnum>
+		<name> Harry Potter </name>
+		<username> theboywholived </username>
+		<password> iLoveHermione</password>
+	</user>
+
+	<!-- second user -->
+	<user>
+		<idnum> 2 </idnum>
+		<name> Hermione Granger </name>
+		<username> gingerlover </username>
+		<password> butIActuallyLoveHarry</password>
+	</user>
+
+	<!-- third user -->
+	<user>
+		<idnum> 3 </idnum>
+		<name> Ron Weasley </name>
+		<username> weasleyIsOurKing </username>
+		<password> chocolateIsMyLife </password>
+	</user>
+</users>
+
+
