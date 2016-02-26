@@ -131,7 +131,17 @@ var buildings = [
                         var directionsService = new google.maps.DirectionsService;
                         var directionsDisplay = new google.maps.DirectionsRenderer;
                         
-                        var coverletter =  '<h1 class = "contentBox"> HAHAAHH </h1>' + '<br/>';
+                        var coverletter =  '<h1 class = "contentBox"> Why You Should Hire Me </h1>' + '<br/>'
+                                            + '<p> 1. I can out eat you in a food eating competition because I’ve trained my stomach to be a black hole </p> '
+                                            + '<p> 2. I love cheese more than anything and can help you choose which cheeses to pair with your food..or just what cheeses are good to eat solo (Protip: all cheeses are good solo) </p> '
+                                            + '<h4> But in all seriousness... </h4>'
+                                            + '<p> 3. I am excited to apply my knowledge of Databases and User Interface, which were a couple of my favorite classes during my undergrad career</p> '
+                                            + '<p> 4. I have a wide set of skills and have the foundation to pick up and learn new technologies  </p>'
+                                            + '<p> 5. To reiterate my skillset, allow me to iterate through my skillset: </p> '
+                                            + '<p> for (var i = 0; i < skillsInResume.length; i++) </p>'
+                                            + '<p> { </p>'
+                                            + '<p> console.log("Awesome skill #" + i + " is " + skillsInResume[i]); </p>'
+                                            + '<p> } </p>';
 
 						var infowindow = new google.maps.InfoWindow({
                                         content: coverletter
