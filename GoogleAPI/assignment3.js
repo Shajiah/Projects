@@ -1,113 +1,113 @@
 var buildings = [
                         {
-                                        "image": "armory.jpg",
-                                        "name": "Armory Hall",
-                                        "latitude": 44.977276,
-                                        "longitude":  -93.232266,
-                                        "architect": "Charles Aldrich",
+                                        "image": "luce.jpg",
+                                        "name": "Pizza Luce",
+                                        "latitude": 44.981918,
+                                        "longitude":  -93.273662,
+                                        "architect": "Pizza",
                                         "year": 1896,
-                                        "description": "Built for athletics and military drill, as well as performing arts and social activities. Memorial plaques at the front entrance honor students, faculty, and alumni who fought in the Spanish-American War.",
+                                        "description": "Local pizzeria chain serving creative pies, pasta & hoagies, plus beer & wine, in a casual setting.",
                                         "markerIMG": "icon.png"
                         },
 
                         {
-                                        "image": "eddy.jpg",
-                                        "name": "Eddy Hall",
-                                        "latitude": 44.977679, 
-                                        "longitude": -93.236707,
-                                        "architect":  "LeRoy Buffington",
+                                        "image": "112eatery.jpg",
+                                        "name": "112 Eatery",
+                                        "latitude": 44.982794, 
+                                        "longitude": -93.271731,
+                                        "architect": "Eclectic Restaurant",
                                         "year": 1886,
-                                        "description": "Built as Mechanic Arts. It is the oldest existing building on campus. Named for Henry Turner Eddy, professor of engineering and mathematics and dean of the Graduate School.",
+                                        "description": "Acclaimed spot offering an eclectic menu of elevated comfort fare for dinner & late-night dining.",
                                         "markerIMG": "icon.png"
                         },
 
                         {
-                                        "image": "folwell.jpg",
-                                        "name": "Folwell Hall",
-                                        "latitude": 44.978354,
-                                        "longitude": -93.234409,
-                                        "architect": "Clarence H. Johnston, Sr.",
+                                        "image": "saffron.jpg",
+                                        "name": "Saffron Restaurant & Lounge",
+                                        "latitude": 44.982609, 
+                                        "longitude": -93.272606,
+                                        "architect": "Middle Eastern",
                                         "year": 1907,
-                                        "description": "When Old Main burned in 1904, Folwell Hall was built to house displaced departments. Named for William Watts Folwell, first president of the University, 1869-84. ",
+                                        "description": "Contemporary Mediterranean haunt with stylish decor & clever cocktails, plus tapas & choice entrees.",
                                         "markerIMG": "icon.png"
                         },
 
                         {
-                                        "image": "jones.jpg",
-                                        "name": "Jones Hall",
-                                        "latitude":44.977995, 
-                                        "longitude":-93.235415,
-                                        "architect": "Charles Aldrich",
+                                        "image": "fogo.jpg",
+                                        "name": "Fogo de Chao",
+                                        "latitude": 44.978529, 
+                                        "longitude": -93.273908,
+                                        "architect": "Brazilian",
                                         "year": 1901,
-                                        "description": "Built as Physics Building. Named for Frederick S. Jones, professor of physics and dean of the College of Engineering.",
+                                        "description": "Upscale Brazilian chain for all-you-can-eat meat carved tableside plus an extensive salad bar",
                                         "markerIMG": "icon.png"
 
                         },
 
                         {
-                                        "image": "music.jpg",
-                                        "name": "Music Education",
-                                        "latitude": 44.971201,
-                                        "longitude": -93.241777,
-                                        "architect": "Warren H. Hayes",
+                                        "image": "union.jpg",
+                                        "name": "UNION Restaurant",
+                                        "latitude": 44.977330, 
+                                        "longitude": -93.275367,
+                                        "architect": "American Restaurant",
                                         "year": 1888,
-                                        "description": "Built as Student Christian Association building. Acquired by the University, it housed Child Welfare and Music Education.",
+                                        "description": "Popular modern eatery offers seafood, New American cuisine & cocktails, plus a rooftop atrium patio.",
                                         "markerIMG": "icon.png"
 
                         },
 
                         {
-                                        "image": "nicholson.jpg",
-                                        "name": "Nicholson Hall",
-                                        "latitude": 44.977197,
-                                        "longitude": -93.235973,
-                                        "architect": "'LeRoy Buffington with Harvey Ellis'",
+                                        "image": "huberts.jpg",
+                                        "name": "Huberts Sports Bar & Grill",
+                                        "latitude": 44.979835, 
+                                        "longitude": -93.275592,
+                                        "architect": "American Restaurant",
                                         "year": 1890,
-                                        "description": "'Built as chemical laboratory. In 1914, chemistry moved to the mall area and Nicholson was remodeled for the mens union until Coffman Memorial Union was built as a coed student union. Named for Edward E. Nicholson, professor of chemistry and later dean of Student Affairs. '",
+                                        "description": "Watering hole with bar fare such as burgers, wings & pizza, plus lots of TVs & daily happy hour. ",
                                         "markerIMG": "icon.png"
                         },
 
                         {
-                                        "image": "pillsbury.jpg",
-                                        "name": "Pillsbury Hall",
-                                        "latitude":44.977018,
-                                        "longitude": -93.234444,
-                                        "architect": 'Leroy Buffington with Harvey Ellis',
+                                        "image": "508bar.jpg",
+                                        "name": "508 Bar and Restaurant",
+                                        "latitude": 44.980427, 
+                                        "longitude": -93.274004,
+                                        "architect": 'American Restaurant',
                                         "year": 1889,
-                                        "description": 'Built as Science Hall. Named for Governor John S. Pillsbury.',
+                                        "description": 'Lively 2-story bar & grill serves up cocktails & casual grub in a spacious, industrial-styled venue.',
                                         "markerIMG": "icon.png"
                         },
 
                         {
-                                        "image": "statue.jpg",
-                                        "name": "Pillsbury Statue",
-                                        "latitude":44.978239, 
-                                        "longitude":-93.236964,
-                                        "architect": "Daniel C. French, sculptor",
+                                        "image": "seafood.jpg",
+                                        "name": "The Oceanaire Seafood Room",
+                                        "latitude": 44.978636, 
+                                        "longitude":-93.271663,
+                                        "architect": "Seafood",
                                         "year": 1900,
-                                        "description": "Pillsbury statue located across the street from Burton Hall.",
+                                        "description": "High-end chain offering seafood, steaks & a deep wine list in sophisticated but lively environs.",
                                         "markerIMG": "icon.png"
                         },
 
                         {
-                                        "image": "wesbrook.jpg",
-                                        "name": "Wesbrook Hall",
-                                        "latitude": 44.976662,
-                                        "longitude": -93.236310,
-                                        "architect": "Frederick Corser",
+                                        "image": "pourhouse.JPG",
+                                        "name": "The Pourhouse",
+                                        "latitude": 44.979851, 
+                                        "longitude": -93.271712,
+                                        "architect": "American Restaurant",
                                         "year": 1898,
-                                        "description": "Built as Laboratory of Medical Science. In 1912, dentistry moved here. Named for Frank Wesbrook, professor of pathology and bacteriology and dean of the College of Medicine and Surgery. ",
+                                        "description": "Sports bar & nightclub has happy hours & live music plus signature cocktails, craft beers & burgers ",
                                         "markerIMG": "icon.png"
                         },
 
                         {
-                                        "image": "wulling.jpg",
-                                        "name": "Wulling Hall",
-                                        "latitude": 44.976306, 
-                                        "longitude": -93.237437, 
-                                        "architect": "Allen Stem and Charles Reed",
+                                        "image": "donghae.jpg",
+                                        "name": "Dong Hae",
+                                        "latitude": 44.982337, 
+                                        "longitude": -93.270852, 
+                                        "architect": "Korean",
                                         "year": 1892,
-                                        "description": "Built as Medical Hall; named Millard Hall in 1906. Fire damaged the building. It later became the site for the pharmacy building. Named for Frederick J. Wulling, first dean and founder of the College of Pharmacy.",
+                                        "description": "Modern locale for Korean standards, all-you-can-eat sushi, Japanese entrees & industrial-chic decor.",
                                         "markerIMG": "icon.png"
                         }
                 ];
@@ -117,18 +117,43 @@ var buildings = [
                 // var markerlocation;
                 function initMap() 
                 {
-                        
+                        var myImg = "icon.png";
+                        var four51 = "451.png";
+
+
 
                           // Create a map object and specify the DOM element for display.
                         var map = new google.maps.Map(document.getElementById('map'), {
-                            center: {lat: 44.977995, lng: -93.235415},
+                            center: {lat: 44.980427, lng: -93.274004},
                             scrollwheel: false,
                             zoom: 16
                           });
                         var directionsService = new google.maps.DirectionsService;
                         var directionsDisplay = new google.maps.DirectionsRenderer;
                         
+                        var coverletter =  '<h1 class = "contentBox"> HAHAAHH </h1>' + '<br/>';
+
+						var infowindow = new google.maps.InfoWindow({
+                                        content: coverletter
+                                        // alert("the content for this is " + contentString);
+                                });                                        
+
+                        var marker = new google.maps.Marker({
+                                    position: {lat: 44.981432, lng: -93.273265},
+                                    map: map,
+                                    icon: four51,
+                                    info: coverletter
+                                  });
+
+                        marker.addListener('click', function() {
+                                    infowindow.setContent(this.info);
+                                    infowindow.open(map, this);
+
+                                  });
                           directionsDisplay.setMap(map);
+
+
+
 
                           // var onChangeHandler = function() {
                           //   calculateAndDisplayRoute(directionsService, directionsDisplay);
@@ -137,7 +162,7 @@ var buildings = [
                           // document.getElementById('end').addEventListener('change', onChangeHandler);
 
 
-                        var myImg = "icon.png";
+                        
 
                 
                         for(var i = 0; i < buildings.length; i++)

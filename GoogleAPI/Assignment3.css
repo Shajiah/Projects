@@ -2,12 +2,13 @@
 {
 	height: 500px;
 	width: 500px;
-
-	/*height: 100%;
-	width: 100%;*/
 	overflow: scroll;
 }
 
+/*p.contentBox
+{
+	font-style: italic;
+}*/
  .contentBox
  {
  	text-align: center;
