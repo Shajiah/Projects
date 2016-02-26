@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <title></title>
+                <meta charset="UTF-8">
+                <link rel="stylesheet" type="text/css" href="Assignment2.css">
+
+                <script type="text/javascript">
+                        var i = 0; // current displayed building AKA index number
+                        var timing; 
+                        var buildings = [
+                                {
+                                                "image": "armory.jpg",
+                                                "name": "Armory Hall",
+                                                "architect": "Charles Aldrich",
+                                                "year": 1896,
+                                                "description": "Built for athletics and military drill, as well as performing arts and social activities. Memorial plaques at the front entrance honor students, faculty, and alumni who fought in the Spanish-American War."
+                                },
+
+                                {
+                                                "image": "eddy.jpg",
+                                                "name": "Eddy Hall",
+                                                "architect":  "LeRoy Buffington",
+                                                "year": 1886,
+                                                "description": "Built as Mechanic Arts. It is the oldest existing building on campus. Named for Henry Turner Eddy, professor of engineering and mathematics and dean of the Graduate School."
+                                },
+
+                                {
+                                                "image": "folwell.jpg",
+                                                "name": "Folwell Hall",
+                                                "architect": "Clarence H. Johnston, Sr.",
+                                                "year": 1907,
+                                                "description": "When Old Main burned in 1904, Folwell Hall was built to house displaced departments. Named for William Watts Folwell, first president of the University, 1869-84. "
+                                },
+
+                                {
+                                                "image": "jones.jpg",
+                                                "name": "Jones Hall",
+                                                "architect": "Charles Aldrich",
+                                                "year": 1901,
+                                                "description": "Built as Physics Building. Named for Frederick S. Jones, professor of physics and dean of the College of Engineering."
+
+                                },
+
+                                {
+                                                "image": "music.jpg",
+                                                "name": "Music Education",
+                                                "architect": "Warren H. Hayes",
+                                                "year": 1888,
+                                                "description": "Built as Student Christian Association building. Acquired by the University, it housed Child Welfare and Music Education."
+
+                                },
+
+                                {
+                                                "image": "nicholson.jpg",
+                                                "name": "Nicholson Hall",
+                                                "architect": "'LeRoy Buffington with Harvey Ellis'",
+                                                "year": 1890,
+                                                "description": "'Built as chemical laboratory. In 1914, chemistry moved to the mall area and Nicholson was remodeled for the mens union until Coffman Memorial Union was built as a coed student union. Named for Edward E. Nicholson, professor of chemistry and later dean of Student Affairs. '"
+                                },
+
+                                {
+                                                "image": "pillsbury.jpg",
+                                                "name": "Pillsbury Hall",
+                                                "architect": 'Leroy Buffington with Harvey Ellis',
+                                                "year": 1889,
+                                                "description": 'Built as Science Hall. Named for Governor John S. Pillsbury.'
+                                },
+
+                                {
+                                                "image": "statue.jpg",
+                                                "name": "Pillsbury Statue",
+                                                "architect": "Daniel C. French, sculptor",
+                                                "year": 1900,
+                                                "description": "Pillsbury statue located across the street from Burton Hall."
+                                },
+
+                                {
+                                                "image": "wesbrook.jpg",
+                                                "name": "Wesbrook Hall",
+                                                "architect": "Frederick Corser",
+                                                "year": 1898,
+                                                "description": "Built as Laboratory of Medical Science. In 1912, dentistry moved here. Named for Frank Wesbrook, professor of pathology and bacteriology and dean of the College of Medicine and Surgery. "
+                                },
+
+                                {
+                                                "image": "wulling.jpg",
+                                                "name": "Wulling Hall",
+                                                "architect": "Allen Stem and Charles Reed",
+                                                "year": 1892,
+                                                "description": "Built as Medical Hall; named Millard Hall in 1906. Fire damaged the building. It later became the site for the pharmacy building. Named for Frederick J. Wulling, first dean and founder of the College of Pharmacy."
+                                }
+                        ];
+
+                        function startPage()
+                        {
+                                document.getElementById("firstPic").src = buildings[i].image;
+                                document.getElementById("secondPic").src = buildings[i+1].image;
+                                document.getElementById("thirdPic").src = buildings[i+2].image;
+                        }
+                        
+                        // document.getElementById("demo").innerHTML = buildings[0].image;
+                        // document.getElementById("theStart").addEventListener("click", startSlideshow);
+                        function startShowingPics()
+                        {
+                                // alert("in here");
+                                document.getElementById("bigPic").src = buildings[i].image;
+                                document.getElementById("buildingName").innerHTML = buildings[i].name;
+                                document.getElementById("firstPic").className = "highlight";
+                                // document.write("<img src='" + buildings[0].image + "' width='160' height='120'/>");
+                        }
+
+                        function displayNext()
+                        {
+                            advanceIndex();
+                            document.getElementById("bigPic").src = buildings[i].image;
+                            document.getElementById("buildingName").innerHTML = buildings[i].name;
+                            selectOption();
+                            displayThree();
+                            // selectOption();
+                        }
+
+                        function displayPrevious()
+                        {
+                            decrementIndex();
+                            document.getElementById("bigPic").src = buildings[i].image;
+                            document.getElementById("buildingName").innerHTML = buildings[i].name;
+                            selectOption();
+                            displayThree();
+
+                        }
+                        function advanceIndex()
+                        {
+                            // if(i == null) //check for non-integer index
+                            i++;
+                            // alert("advance i is " + i);
+                            if (i == 10)
+                            {
+                                i = 0;
+                            }
+                            
+                        }
+ 
+                        function decrementIndex()
+                        {
+                            i--;
+                            if (i == -1)
+                            {
+                                i = 9;
+                            }
+                        }
+
+                        function displayThree()
+                        {
+                                document.getElementById("firstPic").src = buildings[i].image;
+                                if (i+1 < 10)
+                                {
+                                    document.getElementById("secondPic").src = buildings[i+1].image;
+                                }
+                                if (i+2 < 10)
+                                {
+                                    // i = 0;
+                                    document.getElementById("thirdPic").src = buildings[i+2].image;
+                                }
+                                
+                        }
+
+                        function selectOption()
+                        {
+                            if (document.getElementById("dropdown").options.selectedIndex == 1)
+                            {
+                                document.getElementById("buildingArchitect").innerHTML = buildings[i].architect;
+                            }
+                            if (document.getElementById("dropdown").options.selectedIndex == 2)
+                            {
+                                document.getElementById("buildingYear").innerHTML = buildings[i].year;
+                            }
+                            if (document.getElementById("dropdown").options.selectedIndex == 3)
+                            {
+                                document.getElementById("buildingDescription").innerHTML = buildings[i].description;
+                            }
+                            
+                        }
+
+                        function selectPic(e)
+                        {
+                            var clickedPicture = e.target;
+                            clickedPicture.className = "highlight";
+                            // alert("the event target is", e.target);
+                            // alert("the current target is", document.getElementById(clickedPicture.id).src);
+                            // document.getElementById("bigPic").src = buildings[i].image;
+                            selectOption();
+                            if (clickedPicture.id == "firstPic")
+                            {
+                                document.getElementById("secondPic").className = "";
+                                document.getElementById("thirdPic").className = "";
+                            }
+                            if (clickedPicture.id == "secondPic")
+                            {
+                                document.getElementById("firstPic").className = "";
+                                document.getElementById("thirdPic").className = "";
+                            }
+
+                            if (clickedPicture.id == "thirdPic")
+                            {
+                                document.getElementById("secondPic").className = "";
+                                document.getElementById("firstPic").className = "";
+                            }
+
+                            document.getElementById("bigPic").src = document.getElementById(clickedPicture.id).src;
+                        
+                        }
+
+                        function startSlideshow()
+                        {   
+                            document.getElementById("theStart").disabled = true;
+                            document.getElementById("theNext").disabled = true;
+                            document.getElementById("thePrevious").disabled = true;
+
+                            document.getElementById("bigPic").src = buildings[i].image;
+                            document.getElementById("buildingName").innerHTML = buildings[i].name;
+                            selectOption()
+                            document.getElementById("firstPic").className = "highlight";
+                            advanceIndex();
+                            displayThree();
+                            
+                            // displayNext();
+                            var seconds = document.getElementById("myRange").value;
+                            var milliseconds = seconds * 1000;
+                            // alert("seconds " + seconds);
+                            timing = setTimeout("startSlideshow()", milliseconds);
+                        }
+
+                        function stopSlideshow()
+                        {
+                            document.getElementById("theStart").disabled = false;
+                            document.getElementById("theNext").disabled = false;
+                            document.getElementById("thePrevious").disabled = false;
+
+                            clearTimeout(timing);
+                        }
+
+                        // function disableButtons()
+                        // {
+
+                        // }
+                </script>
+        </head>
+
+        <body onload="startPage()">
+                <button id = "theStart" type="button" onclick ="startShowingPics()">Start</button>
+                <button id = "theNext" type="button" onclick="displayNext()">Next</button>
+                <button id = "thePrevious" type="button" onclick="displayPrevious()">Previous</button>
+                     Select Information Type: 
+                        <select id = "dropdown" onchange="selectOption(this)">
+                                <option id = "nothing" value = "none"> None </option>
+                                <option id = "architect" value = "architect"> Architect </option>
+                                <option id = "year" value = "year"> Year </option>
+                                <option id = "description"value = "description"> Description </option>
+                        </select>
+                        <br/><br/>
+
+                        <img id = "firstPic" src="" onclick="selectPic(event)" height="50" width="50">
+                        <img id = "secondPic" src="" onclick="selectPic(event)" height="50" width="50">
+                        <img id = "thirdPic" src="" onclick="selectPic(event)" height="50" width="50">
+
+                        <br><br>
+
+                        <button type="button" onclick ="startSlideshow()">Start Slide Show</button>
+                        <button type="button" onclick="stopSlideshow()">Stop Slide Show</button>
+
+                        <div>
+                                Fast <input type="range" id="myRange" min = "1" max="10"> Slow
+
+                        </div>
+
+                        <br><br><br>
+                        <div id = "bigDiv">
+                            <div id = "bigImage">
+                                    <img class = "fading" id = "bigPic" src="" height="300" width="500">
+                                    
+                            </div>
+                            <div id = "allInfo">
+                                        <p class = "info" id = "imageInfo"><b> Image Information: </b> </p>
+                                        <!-- <br> -->
+                                        <b> <p class = "info" id = "buildingName"></p> </b>
+                                        <b> <p class = "info" id = "buildingArchitect"></p> </b>
+                                        <b> <p class = "info" id = "buildingYear"></p> </b>
+                                        <b> <p class = "info" id = "buildingDescription"></p> </b>
+                            </div>
+                        </div>
+
+                        
+        </body>
+</html>
